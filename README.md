@@ -1,6 +1,10 @@
-# Go Links UI
+# Lets Go
 
 A lightweight local Go Links manager that lets you create short `go/alias` redirects via a browser UI.
+
+## Screenshot
+![Screenshot](images/screenshot.png)
+
 
 ## Getting started
 
