@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Go Links</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true">
+      <div class="blob blob--one"></div>
+      <div class="blob blob--two"></div>
+      <div class="blob blob--three"></div>
+    </div>
+
+    <header class="hero">
+      <div class="hero__content">
+        <h1>Go&nbsp;Links</h1>
+        <p class="hero__subtitle">Create smart go/<span class="tag">alias</span> redirects and open them instantly.</p>
+        <div class="hero__cta">
+          <span class="chip">Pro tip: type <code>go/</code> in your browser</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel" aria-label="Create or update a link">
+        <h2>Add / update a link</h2>
+        <p class="panel__hint">Enter a short alias (e.g., <code>metro</code>) and a destination URL.</p>
+        <form id="linkForm" class="form">
+          <div id="editIndicator" class="edit-indicator" hidden>
+            Editing <span id="editAlias"></span> — changes will update the existing link.
+          </div>
+          <label class="form__field">
+            <span class="form__label">Alias</span>
+            <input id="alias" name="alias" required placeholder="metro" />
+          </label>
+          <label class="form__field">
+            <span class="form__label">URL</span>
+            <input id="url" name="url" required placeholder="https://example.com" />
+          </label>
+          <label class="form__field">
+            <span class="form__label">Description (optional)</span>
+            <input id="description" name="description" placeholder="A quick note" />
+          </label>
+          <div class="form__actions">
+          <button class="button button--primary" type="submit" id="saveBtn">Save link</button>
+          <button class="button button--secondary" type="button" id="cancelEditBtn" hidden>Cancel</button>
+        </div>
+        </form>
+      </section>
+
+      <section class="panel" aria-label="Your links">
+        <div class="panel__heading">
+          <h2>Your links</h2>
+          <span class="badge">Go / alias</span>
+        </div>
+
+        <div id="links" class="links" aria-live="polite"></div>
+
+        <div class="panel__hint">
+          <p>Tip: click “Copy” to quickly paste the go/<span class="tag">alias</span> in the address bar.</p>
+        </div>
+      </section>
+
+      <section class="panel" aria-label="How to use">
+        <h2>How to use</h2>
+        <ol class="howto">
+          <li>Add a link above.</li>
+          <li>Open <code>http://go:3000/<span class="tag">alias</span></code> (or <code>http://localhost:3000/<span class="tag">alias</span></code>).</li>
+          <li>Add <code>127.0.0.1 go</code> to <code>/etc/hosts</code> so <code>go/<span class="tag">alias</span></code> works.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Made for fast access — powered by <a href="https://github.com/typicode/lowdb" target="_blank" rel="noreferrer">lowdb</a></p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

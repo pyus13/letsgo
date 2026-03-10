@@ -1,0 +1,19 @@
+{
+  "name": "go-links-ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local Go Links manager with a web UI to create short go/ links.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "lowdb": "^6.0.1",
+    "nanoid": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
