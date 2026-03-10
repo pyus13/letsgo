@@ -5,6 +5,10 @@ A lightweight local Go Links manager that lets you create short `go/alias` redir
 ## Screenshot
 ![Screenshot](images/screenshot.png)
 
+## Demo
+https://github.com/user-attachments/assets/939b77ce-abd6-4e57-912d-41915b0f488d
+
+
 
 ## Getting started
 
