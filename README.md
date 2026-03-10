@@ -28,25 +28,6 @@ npm run dev
 
 - Visit `http://localhost:3000` to manage links.
 
-## Using `go/alias` in your browser
-
-To use `go/alias` in the address bar (e.g., `go/metro`), add an entry to your hosts file:
-
-- macOS / Linux: edit `/etc/hosts`
-- Windows: edit `C:\Windows\System32\drivers\etc\hosts`
-
-Add:
-
-```
-127.0.0.1 go
-```
-
-Then you can open:
-
-```
-http://go:3000/metro
-```
-
 ### Start everything with one command
 
 Run the all-in-one helper script to:
@@ -61,6 +42,11 @@ Run the all-in-one helper script to:
 ```
 
 It will print the URL you can use to manage links and the URL you can use in the browser.
+
+
+### Add this to access the dashboard as go/go
+
+<img width="451" height="103" alt="Screenshot 2026-03-10 at 1 03 31 PM" src="https://github.com/user-attachments/assets/c61c35fb-83a6-491f-8fb0-9071700bb779" />
 
 ---
 
